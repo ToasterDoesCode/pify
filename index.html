@@ -1,0 +1,29 @@
+<html>
+	<head>
+		
+	</head>
+	<script>
+		function pify()
+		{
+			var text = document.getElementById("pifytxt").value;
+    		document.getElementById("txtToChange").innerHTML = text.split(' ').map(s => 'P' + s).join(' ');
+			console.log(document.getElementById("txtToChange").innerHTML);
+		}
+		
+		
+	</script>
+	
+	
+	<body>
+		<form>
+			<label for="pifytxt">Text to P-ify:</label>
+			<input type="text" id="pifytxt" name="pifytxt">
+			
+			
+		</form>
+		<h1 id="txtToChange">Your text will appear here.</h1>
+		<button onclick="pify()">Click to generate.</button>
+	</body>
+	
+	
+</html>
